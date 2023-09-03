@@ -1,21 +1,151 @@
 body{
-    max-width: 50rem;
-    margin:auto;
-    height:100vh
+    /* max-width: 50rem; */
+    margin:0 auto;
 }
 
-h1{
+.register-screen div:first-child{
+    background-color: #b6cdbd;
+}
+
+.register-screen h1{
     text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin:0;
+    padding:1rem
+}
+
+.register-players{
+    font-size: 2rem;
+    display:grid;
+    justify-items: center
+}
+
+.register-players label{
+    font-weight: bold;
+}
+
+.register-players input{
+    font-size: 2rem;
+    display:block;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin:1rem 0;
+}
+
+.register-players button{
+    width: 100%;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgb(0, 0, 0, 0.6);
+    font-size: 2rem;
+    padding:1rem 2rem;
+    background-color: #ddeedf;
+    margin-top: 1rem;
+}
+
+.register-players button:active{
+    transform: scale(0.98);
+}
+
+
+
+
+
+
+
+.game-screen{
+    display: none;
+}
+
+.header{
+    margin:0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1{
+    font-size: 3rem;
+}
+
+.header button,.header div{
+    width:2.5rem;
+    height:2.5rem
+}
+
+.header button{
+    padding: 0;
+    background-color: white;
+    border:none
+}
+
+.header button:hover{
+    transform: scale(1.1);
+}
+
+.header img{
+    width:100%
+}
+
+
+.result-display{
+    text-align: center;
+}
+
+
+.result-display{
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.restart{
+    display:none;
+    margin:0 auto;
+    border:none;
+    background-color: #b6cdbd;
+    font-size: 2rem;
+    font-weight: bold;
+    padding:0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.4);
+}
+
+.restart:active{
+    transform: scale(0.98);
+}
+
+.show-restart-button{
+    display: block;
 }
 
 .game-board{
     display:grid;
     grid-template: repeat(3,1fr)/repeat(3,1fr);
+    margin:2rem auto;
+    gap:0.5rem;
+    max-width:500px
 }
 
 .square{
+    
     aspect-ratio: 1;
-    border:1px solid black;
+    background-color: #ddeedf;
+    box-shadow: 0 2px 6px rgb(0, 0, 0, 0.6);
+    border-radius: 10px;
+    font-size: 100%;
+    padding:3rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
  
+}
 
+.square img{
+    width:100%
+}
+
+.square:hover{
+    transform:scale(1.05)
 }

@@ -8,9 +8,54 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h1>Tic Tac Toe</h1>
-    <div class="game-board">
+    
+    <div class="register-screen">
+        <div>
+            <h1>Tic Tac Toe</h1>
+        </div>
+        
+        <div class="register-players">
+            <p>Enter Players' Name</p>
+            <form action="">
+                <label for="playerOneName">Player 1</label>
+                <input type="text" id="playerOneName" required>   
+                <label for="playerTwoName">Player 2</label>
+                <input type="text" id="playerTwoName" required> 
+                <button type="submit" id="register-button">Let's Play!</button>
+            </form>
+            
+
+
+        </div>
     </div>
+
+
+
+    
+    <div class="game-screen">
+        <div class="header">
+            <div></div>
+            <h1>Tic Tac Toe</h1>
+            <button class="restart-icon">
+                <img src="images/restart.png" alt="">
+            </button>   
+        </div>
+        <div class="result-display"></div>
+        <button class="restart">Restart</button>
+        <div class="game-board">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+
+        </div>
+    </div>
+    
     
 </body>
 </html>
