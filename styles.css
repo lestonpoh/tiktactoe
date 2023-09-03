@@ -50,10 +50,6 @@ body{
 
 
 
-
-
-
-
 .game-screen{
     display: none;
 }
@@ -80,7 +76,7 @@ body{
     border:none
 }
 
-.header button:hover{
+button:hover{
     transform: scale(1.1);
 }
 
