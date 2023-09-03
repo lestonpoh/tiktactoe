@@ -1,0 +1,21 @@
+body{
+    max-width: 50rem;
+    margin:auto;
+    height:100vh
+}
+
+h1{
+    text-align: center;
+}
+
+.game-board{
+    display:grid;
+    grid-template: repeat(3,1fr)/repeat(3,1fr);
+}
+
+.square{
+    aspect-ratio: 1;
+    border:1px solid black;
+ 
+
+}
